@@ -1,0 +1,119 @@
+body {
+    height: 100vh;
+    font-family: 'Mukta', sans-serif;
+    display: grid;
+    width: 100vw;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 100px 1fr;
+    grid-template-areas: "sidebar content";
+}
+
+#content {
+    height: 100%;
+    background-image: url("bckg.jpg");
+    background-repeat: no-repeat;
+    opacity: .70;
+    padding: 1em;
+}
+
+section {
+    grid-area: content;
+    color: #fff;
+    padding: 20px;
+}
+
+#content.content-background {
+    background:
+        
+        linear-gradient(rgba(100, 64, 64, 1),
+        rgba(100, 64, 64, .93)),
+       
+        url(bckg.jpg);
+}
+
+.selected {
+    color: rgb(248, 242, 133);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    flex-direction: column;
+    height: 100%;
+}
+
+#minimalist {
+    font-size: 3rem;
+}
+
+.far {
+    margin: 10px;
+    font-size: 3em;
+    color: #fff;
+
+}
+
+#home {
+    padding-bottom: 2em;
+}
+
+.header {
+    color: #fff;
+    font-size: 10em;
+    padding: 25%;
+}
+
+nav {
+    background-color: rgb(38, 38, 38);
+    color: rgb(102, 102, 101);
+    height: 100%;
+    text-align: left;
+    padding: 5px;
+}
+
+.nav-item {
+    padding-bottom: 20px;
+
+}
+
+.sidebar {
+    background-color: rgb(38, 38, 38);
+    grid-area: sidebar;
+    display: grid;
+}
+
+.user-info {
+    padding-bottom: 1em;
+    line-height: 2em;
+}
+
+button {
+    border: none;
+    background-color: inherit;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+input {
+    width: 200px;
+    height: 20px;
+}
+
+.content-header {
+    padding-bottom: 1em;
+}
+
+.form-box {
+    display: grid;
+    grid-template-columns: 150px 200px;
+    padding-bottom: 1em;
+}
